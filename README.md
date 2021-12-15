@@ -63,8 +63,9 @@ inside LiveWire Class:
 
 ```php
 public function submit(){
+        $guardName = 'admin';
         try {
-            $this->res = app(AuthPlusAuthenticateUser::class)->twofactor($this->twofactor_input)->captcha($this->captcha)->Authenticate('admin', $this->username, $this->password, true);
+            $this->res = app(AuthPlusAuthenticateUser::class)->twofactor($this->twofactor_input)->captcha($this->captcha)->Authenticate($guardName, $this->username, $this->password, true);
             $this->err = $this->res;
             return redirect()->away(AuthPlusLogics::getHomePage());
         }catch (LoginFailedExecption $exception){
@@ -75,7 +76,6 @@ public function submit(){
                 $this->err = "login failed > " . $exception->getStatus() . " - data : " . (is_array($exception->getData()) ? implode(",",$exception->getData()) : $exception->getData());
             }
         }
-
     }
 ```
 You Customize your Auth stuff in Service Provider because everything are on default :
