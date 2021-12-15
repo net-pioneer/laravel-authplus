@@ -1,6 +1,5 @@
 # laravel-authplus
 Multi authentication for laravel v1.0.0 Based On LiveWire
-
 note : <br>
 First Rival it's my first project which i decided to publish it for public usage.
 so if something wrong happened in my codes, plz fix it by yourself and share it to us LOL.
@@ -11,8 +10,8 @@ so if something wrong happened in my codes, plz fix it by yourself and share it 
 - Multi Authentication
 - Auto Generation DB tables
 - and etc.
-<h5>Installation : </h5><br>
-<code>composer require net-pioneer/laravel-authplus</code><br>
+<h5>Installation : </h5>
+<code>composer require net-pioneer/laravel-authplus</code><br><br>
 Or
 copy the hole files into your Project-name/Packages/netpioneer/authplus <br>
 and then add codes bellow to your main composer
@@ -38,11 +37,10 @@ NOTE : Before to run migration you should config your auth.php in config folder.
 NOTE : you should know LiveWire Basics . you i write it short
 <h5>4:</h5>
 View :
-```html
-<div>
-    <h1>livewire page is here</h1>
-    <hr>
-    <form wire:submit.prevent="submit">
+<br>
+
+```html 
+<form wire:submit.prevent="submit">
         @csrf
         @if(!$twofactor)
         <input type="text" name="username" wire:model.defer="username">
@@ -56,10 +54,10 @@ View :
         @endif
         <input type="submit">
     </form>
-    <div style="color:red;">{{$err}}</div>
-</div>
 ```
+
 inside LiveWire Class:
+
 ```php
 public function submit(){
         try {
