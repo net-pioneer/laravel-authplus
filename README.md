@@ -1,5 +1,8 @@
 # laravel-authplus
 Multi authentication for laravel v1.0.0 Based On LiveWire
+<br>
+net-pioneer (pouya)
+<br><br>
 note : <br>
 First Rival it's my first project which i decided to publish it for public usage.
 so if something wrong happened in my codes, plz fix it by yourself and share it to us LOL.
