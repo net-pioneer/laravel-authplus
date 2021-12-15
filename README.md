@@ -78,7 +78,7 @@ public function submit(){
         }
     }
 ```
-You Customize your Auth stuff in Service Provider because everything are on default :
+You could able to Customize your Auth stuff in Service Provider because everything are on default :
 ```php
 AuthPlus::AuthenticateMethod(AuthPlusAuthenticateUserDefualt::class);
 AuthPlus::RedirectAuthenticated(AuthPlusRedirectAuthenticatedCustom::class);
