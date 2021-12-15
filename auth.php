@@ -43,12 +43,14 @@ return [
             'open_route'=>true,
             'signup'=> [
                 'show'=>true,
-                'Verify'=>[]
+                'verify'=>[], // should be configured before migration
+
             ],
             'login'=>[
                 'view2' => "AuthPlus::login",
                 'view' => \App\Http\Livewire\LoginUser::class,
-                'two-factor'=>false
+                'two-factor'=>false,
+                'check_verification'=>false
             ]
         ],
         'admin' => [
@@ -57,13 +59,14 @@ return [
             'url' => 'admpnl',
             'open_route'=>true,
             'signup'=> [
-                'show'=>false,
+                'show'=>true,
                 'verify'=>['email','sms'],
             ],
             'login'=>[
                 'view2' => "AuthPlus::login",
                 'view' => \App\Http\Livewire\Login::class,
-                'two-factor'=>true,
+                'two-factor'=>false,
+                'check_verification'=>false
             ]
         ],
     ],
@@ -118,11 +121,11 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
+        'admin' => [
+            'provider' => 'admin',
             'table' => 'password_resets',
             'expire' => 60,
-            'throttle' => 60,
+            'throttle' => 3,
         ],
     ],
 
