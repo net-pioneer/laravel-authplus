@@ -8,10 +8,11 @@ First Rival it's my first project which i decided to publish it for public usage
 so if something wrong happened in my codes, plz fix it by yourself and share it to us LOL.
 
 <h5>Features :</h5>
-- Captcha
-- Two Factor Authentication (based on your Configuration Like SMS/Email/Google authenticator)
-- Multi Authentication
-- Auto Generation DB tables
+- Captcha <br>
+- Two Factor Authentication (based on your Configuration Like SMS/Email/Google authenticator) <br>
+- Multi Authentication<br>
+- Auto Generation DB tables<br>
+- User Verifications (BASIC and Simple one) <br>
 - and etc.
 <h5>Installation : </h5>
 <code>composer require net-pioneer/laravel-authplus</code><br><br>
