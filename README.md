@@ -1,6 +1,8 @@
 # laravel-authplus
 Multi authentication for laravel v1.0.0 Based On LiveWire
 <br>
+It's a first version of laravel Multi Authentication, which you can authenticate many types of users (admin/customer/user). 
+<br>
 net-pioneer (pouya)
 <br><br>
 note : <br>
