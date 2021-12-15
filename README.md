@@ -85,7 +85,7 @@ AuthPlus::RedirectAuthenticated(AuthPlusRedirectAuthenticatedCustom::class);
 AuthPlus::TwoFactorAuthenticator(AuthPlusTwoFactorSmsAuthenticator::class);
 ```
 Router :
-if open route were enabled on auth config file there is no need too create route for each path Lol except the Index file sould be managed on you !
+if open route were enabled on auth config file there is no need to create route for each path Lol except the Index file should be managed on you !
 
 <h5>Donate: </h5>
 Good news ! If you enjoyed this package you could donate me by donating USDT to my wallet ! A Coffee or etc.
