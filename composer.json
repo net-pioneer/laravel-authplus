@@ -1,0 +1,28 @@
+{
+    "name": "netpioneer/laravel-authplus",
+    "description": "multi authentication for laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "net-pioneer (pouya)",
+            "email": "phz@fakemail.phz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "livewire/livewire": "^2.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "netpioneer\\authplus\\Providers\\AuthplusServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "netpioneer\\authplus\\": "src"
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+class [CLASS] extends Authenticatable
+{
+    use HasFactory;
+    protected $table = '[CLASS_LOW]';
+    protected $primaryKey = 'id';
+    protected $fillable = [
+        'name',
+        'email',
+        'username',
+        'password',
+    ];
+    protected $hidden = [
+        'password','remember_token'
+    ];
+}
